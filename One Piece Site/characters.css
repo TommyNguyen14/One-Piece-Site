@@ -1,0 +1,71 @@
+.crewname {
+    text-align: center;
+    width: 100%;
+    padding-top: 15px;
+    position: relative;
+    font-weight: bold;
+    z-index: -1;
+}
+
+.wrapper {
+    width: 95%;
+    height: auto;
+    margin-top: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+    grid-gap: 80px;
+    margin-bottom: 1px;
+    align-items: center;
+}
+
+.waifu {
+    margin-bottom: 3rem;
+}
+
+#waifutitle {
+    padding-top: 3rem;
+}
+
+.card {
+    background-color: rgb(229, 215, 255);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: auto;
+    width: 300px;
+    margin-bottom: -35px;
+}
+
+.image-section {
+    height: 250px;
+    width: 250px;
+    margin-top: 10%;
+    background-color: rgb(91, 57, 95);
+    display: block;
+}
+
+.characters {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.content {
+    padding: 15px 10px;
+    text-align: center;
+}
+
+.content h2 {
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.content p {
+    margin: 10px 0px;
+    font-size: 15px;
+}
+
+@media (max-width: 1024px) {
+    .card {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

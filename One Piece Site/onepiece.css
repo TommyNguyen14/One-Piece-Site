@@ -1,0 +1,271 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    background-color: #dfcaf7;
+}
+
+
+/* Scroll */
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: rgb(185, 171, 183);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+
+}
+#myBtn:hover {
+    background-color: rgb(136, 75, 145);
+    /* Add a dark-grey background on hover */
+}
+
+/* Home Page CSS */
+.homepic img {
+    width: 30%;
+    display: block;
+    padding: 10px;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.wrapper {
+    width: 95%;
+    height: auto;
+    margin: 50px auto;
+    margin-top: 2px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+    grid-gap: 30px;
+}
+.card {
+    background-color: rgb(229, 215, 255);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-family: 'Poppins', sans-serif;
+}
+.image-section {
+    height: 350px;
+    width: 60%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(91, 57, 95);
+    display: block;
+}
+.card .img-one {
+    background-image: url("wano.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card .img-two {
+    background-image: url("oda.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content {
+    padding: 15px 10px;
+    text-align: center;
+}
+.content h2 {
+    letter-spacing: 1px;
+}
+.content p {
+    margin: 15px 0px;
+    font-size: 15px;
+}
+.content a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    display: inline-block;
+    background-color: rgb(91, 57, 95);
+    padding: 10px 18px;
+}
+.content a:hover {
+    background-color: rgb(161, 103, 168);
+    transition: 1 ease;
+}
+.links {
+    padding: 15px 10px;
+    text-align: center;
+    margin-top: 2rem;
+}
+.links h1 {
+    letter-spacing: 1px;
+}
+.links p {
+    margin: 15px 0px;
+    font-size: 15px;
+}
+.links a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    display: inline-block;
+    background-color: rgb(91, 57, 95);
+    padding: 15px 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.links a:hover {
+    background-color: rgb(161, 103, 168);
+    transition: 1 ease;
+}
+.image-section2 {
+    height: 180px;
+    width: 60%;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    display: block;
+}
+.card .img-three {
+    background-image: url("onepiecelogo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 30%;
+}
+
+/* Nav Bar CSS */
+nav {
+    background: #c09fd6;
+    height: 80px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+label.logo {
+    color: rgb(91, 57, 95);
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a {
+    color: rgb(91, 57, 95);
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active,
+a:hover {
+    background: rgb(161, 103, 168);
+    color: white;
+    transition: .5s;
+}
+.checkbtn {
+    font-size: 30px;
+    color: rgb(91, 57, 95);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
+}
+@media (max-width: 1024px) {
+    .image-section {
+        width: 90%;
+    }
+}
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    
+    nav ul li a {
+        font-size: 16px;
+    }
+    
+    .image-section {
+        width: 92%;
+    }
+}
+@media (max-width: 896px) {
+    .checkbtn {
+        display: block;
+    }
+    
+    ul {
+        position: absolute;
+        width: 100%;
+        height: 20rem;
+        background: rgb(192, 129, 207);
+        top: 79px;
+        left: -100%;
+        text-align: center;
+        transition: all .45s;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    
+    nav ul li a {
+        font-size: 20px;
+    }
+    
+    a:hover,
+    a.active {
+        background: none;
+        color: white;
+    }
+    
+    #check:checked~ul {
+        left: 0;
+    }
+    
+    .image-section {
+        width: 90%;
+    }
+}
+@media (max-width: 667px) {
+    .image-section {
+        width: 92%;
+    }
+}
